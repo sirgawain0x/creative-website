@@ -14,7 +14,7 @@ This site uses [Docusaurus](https://docusaurus.io/) with **multiple unversioned 
 |--------|------------|----------------|
 | `community/` | `/community/` | `sidebarsCommunity.js` |
 | `creativetv/` | `/creativetv/` | `sidebarsCreativetv.js` |
-| `creativebank/` | `/creativebank/` | `/creativebank/` |
+| `creativebank/` | `/finance/` | `sidebarsCreativebank.js` |
 
 Configuration lives in `docusaurus.config.js` ([multi-instance docs](https://docusaurus.io/docs/docs-multi-instance)).
 
@@ -75,5 +75,5 @@ Requires `ADMIN_API_KEY` in `.env`. See [`scripts/README.md`](https://github.com
 
 ## What we do not use
 
-- [Docusaurus versioning](https://docusaurus.io/docs/versioning) — community, Creative TV, and Creative Bank docs are all **current / unversioned**.
+- [Docusaurus versioning](https://docusaurus.io/docs/versioning) — community, Creative TV, and Creative Finance docs are all **current / unversioned**.
 - Manual Algolia crawler — we export from Markdown via `scripts/algolia-export.js`.

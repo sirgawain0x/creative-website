@@ -1,5 +1,5 @@
 /**
- * Sidebar configuration for Creative Bank docs (versioned)
+ * Sidebar configuration for Creative Finance docs (unversioned)
  * @type {import('@docusaurus/plugin-content-docs').SidebarsConfig}
  */
 const sidebars = {

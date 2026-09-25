@@ -10,19 +10,19 @@ export default function Fans() {
   
   return (
     <Layout 
-      title="Fans - From Viewer to Investor" 
-      description="The Creative platform blurs the line between audience and owner. Support the artists you love while utilizing institutional-grade tools to grow your onchain portfolio."
+      title="Fans - From Viewer to Professional" 
+      description="The Creative platform blurs the line between audience and owner. Support the artists you love with professional tools designed for the Web3 creative economy."
     >
       <div className="fans-page">
         <Container>
           <div className="fans-page__content">
             <div className="fans-page__header">
-              <span className="fans-page__tagline">From Viewer to Investor</span>
+              <span className="fans-page__tagline">From Viewer to Professional</span>
               <h1 className="fans-page__headline">
                 Don't Just Watch the Future. <br/>Own a Piece of It.
               </h1>
               <p className="fans-page__subheadline">
-                The Creative platform blurs the line between audience and owner. Support the artists you love while utilizing institutional-grade tools to grow your onchain portfolio.
+                The Creative platform blurs the line between audience and owner. Support the artists you love with professional tools designed for the Web3 creative economy.
               </p>
             </div>
 
@@ -52,19 +52,19 @@ export default function Fans() {
 
             <div className="fans-page__section fans-page__section--upgrade">
               <h2 className="fans-page__section-title">
-                Upgrade to the Investor Membership ($100/Month)
+                Upgrade to the Professional Membership ($100/Month)
               </h2>
               <ul className="fans-page__features-list">
                 <li className="fans-page__feature-item">
                   <FontAwesomeIcon icon={faCheckCircle} className="fans-page__check-icon" />
                   <span>
-                    <strong>Pro Investing Tools:</strong> Access advanced analytics and tools designed for the Web3 creative economy.
+                    <strong>Pro Tools:</strong> Access advanced analytics and tools designed for the Web3 creative economy.
                   </span>
                 </li>
                 <li className="fans-page__feature-item">
                   <FontAwesomeIcon icon={faCheckCircle} className="fans-page__check-icon" />
                   <span>
-                    <strong>Exclusive Opportunities:</strong> Get first-look access to new token launches, IP drops, and DAO-specific investment vehicles.
+                    <strong>Exclusive Opportunities:</strong> Get first-look access to new token launches, IP drops, and DAO-specific opportunities.
                   </span>
                 </li>
                 <li className="fans-page__feature-item">

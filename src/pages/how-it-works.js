@@ -126,7 +126,7 @@ export default function HowItWorks() {
       number: 2,
       title: "Choose Your Role (Unlock Your Key)",
       simple: "Pick your role: Creator, Fan, or Brand. Your membership is a key that you own!",
-      tech: "Our ecosystem is powered by Unlock Protocol. Your membership isn't just a subscription; it's an NFT Key that you own. You can start for free or upgrade to a specialized role: Creators (the heartbeat of the platform), Investors/Fans (the fuel for creative growth), or Brands (the partners in cultural innovation).",
+      tech: "Our ecosystem is powered by Unlock Protocol. Your membership isn't just a subscription; it's an NFT Key that you own. You can start for free or upgrade to a specialized role: Creators (the heartbeat of the platform), Professionals/Fans (the fuel for creative growth), or Brands (the partners in cultural innovation).",
       protocols: ["Unlock Protocol"]
     },
     {
@@ -243,7 +243,7 @@ export default function HowItWorks() {
               <h2 className="how-it-works-page__cta-title">Ready to get started?</h2>
               <div className="how-it-works-page__cta-buttons">
                 <a href="https://tv.creativeplatform.xyz" className="thm-btn how-it-works-page__cta-btn">Visit Creative TV</a>
-                <a href="https://bank.creativeplatform.xyz" className="thm-btn how-it-works-page__cta-btn">Earn More with Creative Bank</a>
+                <a href="https://finance.creativeplatform.xyz" className="thm-btn how-it-works-page__cta-btn">Earn More with Creative Finance</a>
               </div>
             </div>
           </div>

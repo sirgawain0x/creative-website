@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Banner from '../components/Banner';
 import Services from '../components/Services';
 import FeaturesOne from '../components/FeaturesOne';
@@ -23,12 +22,11 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   const isBrowser = useIsBrowser();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="The stage is yours"
+      title="Creative Platform — get discovered, get paid, own your audience"
+      description="Get discovered, get paid, and own your audience on Creative TV."
       >
       <HomepageHeader />
       <main>

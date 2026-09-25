@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import {Container, Form, Button} from 'react-bootstrap';
@@ -6,8 +6,18 @@ import {Container, Form, Button} from 'react-bootstrap';
 const PRIVACY_POLICY_PATH = '/community/legal/privacy-policy';
 const TERMS_PATH = '/community/legal/terms-conditions';
 
+const SMS_PAGE_ANNOUNCEMENT = 'Creative Platform for creators, fans and brands.';
+
 const CONSENT_COPY =
-  'I agree to receive marketing text messages from Creative Platform about features, drops, Brand Pass, and community updates. Msg frequency varies. Msg & data rates may apply. Reply STOP to opt out, HELP for help. Consent is not a condition of any purchase.';
+  'I agree to receive recurring automated text messages from Creative Platform, Inc. about meeting scheduling, follow-ups with creators and authors, and platform updates. Msg & data rates may apply. Msg frequency varies. Reply HELP for help and STOP to end.';
+
+function findAnnouncementContent() {
+  const bar = document.querySelector('.theme-announcement-bar');
+  if (!bar) {
+    return null;
+  }
+  return bar.querySelector('[class*="announcementBarContent"]');
+}
 
 export default function SmsOptIn() {
   const [name, setName] = useState('');
@@ -15,6 +25,18 @@ export default function SmsOptIn() {
   const [email, setEmail] = useState('');
   const [consentChecked, setConsentChecked] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    const content = findAnnouncementContent();
+    if (!content) {
+      return undefined;
+    }
+    const previousHtml = content.innerHTML;
+    content.textContent = SMS_PAGE_ANNOUNCEMENT;
+    return () => {
+      content.innerHTML = previousHtml;
+    };
+  }, []);
 
   const phoneFilled = phone.trim().length > 0;
   const canSubmit = consentChecked && phoneFilled;
@@ -30,15 +52,16 @@ export default function SmsOptIn() {
   return (
     <Layout
       title="SMS alerts | Creative Platform"
-      description="Opt in to optional SMS alerts from Creative Platform about features, drops, Brand Pass, and community updates.">
+      description="Opt in to optional text alerts from Creative Platform about meeting scheduling, follow-ups with creators and authors, and platform features and updates.">
       <div className="sms-page">
         <Container>
           <div className="sms-page__content">
             <header className="sms-page__header">
               <h1 className="sms-page__headline">Text alerts from Creative Platform</h1>
               <p className="sms-page__subheadline">
-                Get optional SMS about features, drops, Brand Pass, and community updates. Email
-                still works without texts.
+                Get optional texts from Creative Platform about meeting scheduling, follow-ups with
+                creators and authors, and platform features and updates. Email still works without
+                texts.
               </p>
             </header>
 

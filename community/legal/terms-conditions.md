@@ -33,7 +33,9 @@ Token initiatives and the smart contracts associated with the community's econom
 
 ## SMS Terms and Conditions
 
-Creative Platform, Inc. and Creative Organization DAO LLC: Campaigns that cover multiple use cases such as Customer Care and Marketing to engage with our customers. Message frequency varies. Message and data rates may apply. Reply HELP for help. Reply STOP to cancel. Carriers are not liable for any delays or undelivered messages.
+You may opt in to receive recurring automated text messages from Creative Platform, Inc. by visiting https://creativeplatform.xyz/sms, providing your mobile phone number, and checking a box to consent. Campaigns may cover meeting scheduling and follow-ups with creators and authors, customer care, and platform features and updates.
+
+Message frequency varies. Message and data rates may apply. Reply HELP for help. Reply STOP to cancel. Carriers are not liable for any delays or undelivered messages. Consent is not a condition of any purchase. SMS opt-in data and consent are not sold or shared with third parties or affiliates for their marketing or promotional purposes.
 
 ## User Responsibilities
 

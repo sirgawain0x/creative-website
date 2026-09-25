@@ -71,6 +71,20 @@ _We may share your personal information with third parties in the following circ
 
 No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
 
+## SMS / Text Messaging Program
+
+Creative Platform, Inc. offers an optional recurring SMS/text messaging program for customer care and marketing communications about meeting scheduling, follow-ups with creators and authors, and platform features and updates.
+
+When you opt in at https://creativeplatform.xyz/sms, we collect your mobile phone number and related consent records (including that you checked the consent box and the time of enrollment). You may also optionally provide your name and email address. We use your mobile phone number and consent records solely to send the text messages you requested, confirm your opt-in, process HELP or STOP requests, and maintain records of consent, delivery, and opt-out status as required for messaging compliance.
+
+Message frequency varies. Message and data rates may apply. Consent to receive texts is not a condition of purchasing any goods or services. Reply STOP to any Creative Platform text message to cancel. Reply HELP for help. You may also contact us at creatives@creativeplatform.xyz.
+
+We do not share, sell, rent, or provide your mobile phone number or text messaging originator opt-in data and consent to third parties or affiliates for their marketing or promotional purposes.
+
+No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All other categories of personal information described in this Privacy Policy exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
+
+We may use service providers solely to deliver messages and operate the messaging program (for example, an SMS delivery platform). Those providers are authorized only to process mobile numbers and related consent data on our behalf to send our messages and are not permitted to use that data for their own marketing.
+
 ## Data Retention
 
 We will retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.

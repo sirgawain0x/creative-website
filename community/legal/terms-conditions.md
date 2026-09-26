@@ -12,7 +12,7 @@ These Terms & Conditions ("Terms") govern your access to and use of the Creative
 
 The Creative ecosystem is operated by two affiliated entities:
 
-- **Creative Platform, Inc.** — a Delaware C-Corporation that builds, codes, and maintains the suite of Web3 applications, including Creative TV, Jukebox, Creative Bank, and Creative Pixels. Creative Platform, Inc. focuses on software creation and operation. It does not issue tokens.
+- **Creative Platform, Inc.** — a Delaware C-Corporation that builds, codes, and maintains the suite of Web3 applications, including Creative TV, Jukebox, Creative Finance, and Creative Pixels. Creative Platform, Inc. focuses on software creation and operation. It does not issue tokens.
 - **Creative Organization DAO LLC** — a Wyoming LLC that operates as a community-governed organization (DAO) and incubator. It manages the community ecosystem, oversees platform governance, and facilitates collaborations between creators, fans, and brands. It holds authority over token initiatives and manages the smart contracts associated with the community's economy.
 
 In these Terms, "Creative," "we," "us," and "our" refer to Creative Platform, Inc. and Creative Organization DAO LLC, as applicable to the services you use. References to software products and interfaces mean Creative Platform, Inc.; references to community programs, governance, and token initiatives mean Creative Organization DAO LLC.
@@ -33,7 +33,9 @@ Token initiatives and the smart contracts associated with the community's econom
 
 ## SMS Terms and Conditions
 
-Creative Platform, Inc. and Creative Organization DAO LLC: Campaigns that cover multiple use cases such as Customer Care and Marketing to engage with our customers. Message frequency varies. Message and data rates may apply. Reply HELP for help. Reply STOP to cancel. Carriers are not liable for any delays or undelivered messages.
+You may opt in to receive recurring automated text messages from Creative Platform, Inc. by visiting [https://creativeplatform.xyz/sms](/sms), providing your mobile phone number, and checking a box to consent. Campaigns may cover meeting scheduling and follow-ups with creators and authors, customer care, and platform features and updates.
+
+Message frequency varies. Message and data rates may apply. Reply HELP for help. Reply STOP to cancel. Carriers are not liable for any delays or undelivered messages. Consent is not a condition of any purchase. SMS opt-in data and consent are not sold or shared with third parties or affiliates for their marketing or promotional purposes.
 
 ## User Responsibilities
 
@@ -42,9 +44,24 @@ b. Account Security: You are responsible for maintaining the confidentiality of 
 c. Compliance: You agree to comply with all applicable laws, regulations, and third-party rights while using the Creative platform.
 d. Prohibited Activities: You must not engage in any activity that may interfere with the proper functioning of the platform or infringe upon the rights of others. This includes, but is not limited to, unauthorized access, data scraping, spamming, or any illegal or fraudulent activity.
 
+## Acceptable Use Policy (AUP)
+
+To ensure the safety and integrity of the Creative platform, all users must adhere to the following guidelines. We employ automated AI-powered detection systems to programmatically identify and remove content that violates these terms.
+
+1. **Prohibited Content:** The following categories of content are strictly prohibited and will result in immediate demonetization and removal:
+
+   - **Adult Content:** Any content containing nudity or explicit sexual acts.
+   - **Intellectual Property Infringement:** Content that violates copyright, trademarks, or proprietary rights (e.g., leaked music, unauthorized redistribution).
+   - **Violent Extremism:** Content that encourages, promotes, or celebrates unlawful violence or hate speech toward any group based on race, religion, disability, gender, sexual orientation, or national origin.
+
+2. **Reporting and Enforcement:**
+
+   - **Reporting:** Rights holders or aggrieved parties may report violating content via creatives@creativeplatform.xyz. We commit to reviewing and acting upon valid reports promptly.
+   - **Repeat Violators:** We maintain a strict policy for repeat offenders. Users who repeatedly violate the AUP will have their accounts permanently terminated and their access to the platform revoked.
+
 ## Intellectual Property
 
-a. Software and product intellectual property: The Creative software applications, including their content, logos, trademarks, and other intellectual property associated with products such as Creative TV, Jukebox, Creative Bank, and Creative Pixels, are owned by Creative Platform, Inc. or its licensors, except where otherwise noted.
+a. Software and product intellectual property: The Creative software applications, including their content, logos, trademarks, and other intellectual property associated with products such as Creative TV, Jukebox, Creative Finance, and Creative Pixels, are owned by Creative Platform, Inc. or its licensors, except where otherwise noted.
 b. Community and governance materials: Community marks, governance materials, and related ecosystem intellectual property associated with Creative Organization DAO LLC remain owned by Creative Organization DAO LLC or its licensors, as applicable.
 c. Restrictions: You may not use, reproduce, or distribute our intellectual property without prior written permission from the applicable owner.
 d. User Contributions: By contributing content or materials to the platform, you grant Creative Platform, Inc. and Creative Organization DAO LLC a non-exclusive, worldwide, royalty-free license to use, reproduce, modify, adapt, and distribute your contributions for the purpose of operating and promoting the Creative platform and community, as applicable.

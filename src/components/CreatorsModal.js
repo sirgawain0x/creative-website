@@ -32,7 +32,7 @@ const CreatorsModal = ({ show, onHide }) => {
             Stop Being a Product. Start Being a Platform.
           </h2>
           <p className="creators-modal__subheadline">
-            At Creative TV, you keep 100% of your revenue and total control over your intellectual property. From your first upload to your first prediction market, we provide the onchain tools to turn your art into an ecosystem.
+            On Creative TV, keep 100% of revenue and your IP. Grow your audience and build a lasting business from your first upload.
           </p>
 
           <div className="creators-modal__section">
@@ -41,25 +41,25 @@ const CreatorsModal = ({ show, onHide }) => {
               <li className="creators-modal__feature-item">
                 <FontAwesomeIcon icon={faCheckCircle} className="creators-modal__check-icon" />
                 <span>
-                  <strong>Decentralized Hosting:</strong> Upload music videos, podcasts, and original films/animations without fear of de-platforming.
+                  <strong>Reliable Hosting:</strong> Upload video, podcasts, and films safely.
                 </span>
               </li>
               <li className="creators-modal__feature-item">
                 <FontAwesomeIcon icon={faCheckCircle} className="creators-modal__check-icon" />
                 <span>
-                  <strong>Onchain IP Management:</strong> Register your work via Story Protocol to secure your rights globally and instantly.
+                  <strong>IP Management:</strong> Register work and secure your rights.
                 </span>
               </li>
               <li className="creators-modal__feature-item">
                 <FontAwesomeIcon icon={faCheckCircle} className="creators-modal__check-icon" />
                 <span>
-                  <strong>Collaborative Splits:</strong> Automatically distribute earnings to your team with smart contract revenue splits.
+                  <strong>Collaborative Splits:</strong> Split earnings with your team automatically.
                 </span>
               </li>
               <li className="creators-modal__feature-item">
                 <FontAwesomeIcon icon={faCheckCircle} className="creators-modal__check-icon" />
                 <span>
-                  <strong>Launch Your meToken:</strong> Create a tradeable social token to build a liquid economy around your brand.
+                  <strong>Launch Your meToken:</strong> Launch your meToken and grow a supporter community.
                 </span>
               </li>
             </ul>
@@ -67,25 +67,25 @@ const CreatorsModal = ({ show, onHide }) => {
 
           <div className="creators-modal__section creators-modal__section--upgrade">
             <h3 className="creators-modal__section-title">
-              Upgrade to the Creator Membership ($30/Quarter)
+              Upgrade to the Creator Membership ($10/Month)
             </h3>
             <ul className="creators-modal__features-list">
               <li className="creators-modal__feature-item">
                 <FontAwesomeIcon icon={faCheckCircle} className="creators-modal__check-icon" />
                 <span>
-                  <strong>Go Live:</strong> Unlock high-performance livestreaming powered by Livepeer.
+                  <strong>Go Live:</strong> Go live and stream to your fans.
                 </span>
               </li>
               <li className="creators-modal__feature-item">
                 <FontAwesomeIcon icon={faCheckCircle} className="creators-modal__check-icon" />
                 <span>
-                  <strong>The AI Agent Factory:</strong> Access our AI agents that help make running your Creative business easier while you focus on what you do best as a creator.
+                  <strong>The AI Agent Factory:</strong> AI agents that run business tasks for you.
                 </span>
               </li>
               <li className="creators-modal__feature-item">
                 <FontAwesomeIcon icon={faCheckCircle} className="creators-modal__check-icon" />
                 <span>
-                  <strong>Prediction Markets:</strong> Let your fans bet on your success. Create markets for viewers to predict your future milestones, creating a new layer of engagement and utility.
+                  <strong>Prediction Markets:</strong> Fans call your next milestone and ride along with your journey.
                 </span>
               </li>
             </ul>

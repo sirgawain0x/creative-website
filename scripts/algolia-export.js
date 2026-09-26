@@ -20,7 +20,7 @@ const STATIC_PAGES = [
   {
     path: '/',
     title: 'Creative - The Stage is YOURS',
-    content: 'The Web3 platform for creators, fans and brands. Creative TV, Creative Bank, blockchain platform, independent creators, DeFi, P2E incentives.',
+    content: 'The Web3 platform for creators, fans and brands. Creative TV, Creative Finance, blockchain platform, independent creators, DeFi, P2E incentives.',
     type: 'page',
   },
   {
@@ -290,10 +290,10 @@ function exportAlgoliaRecords() {
     records.push(...processDocFile(filePath, creativetvPath, 'creativetv', 'doc'));
   });
 
-  // Process Creative Bank docs
+  // Process Creative Finance docs
   const creativebankPath = path.join(projectRoot, 'creativebank');
   findMarkdownFiles(creativebankPath).forEach((filePath) => {
-    records.push(...processDocFile(filePath, creativebankPath, 'creativebank', 'doc'));
+    records.push(...processDocFile(filePath, creativebankPath, 'finance', 'doc'));
   });
 
   // Process Blog posts

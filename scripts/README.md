@@ -54,7 +54,7 @@ Then in the [Algolia Dashboard](https://dashboard.algolia.com):
 
 - **Community docs** (`/community/*`)
 - **Creative TV docs** (`/creativetv/*`)
-- **Creative Bank docs** (`/creativebank/*`)
+- **Creative Finance docs** (`/finance/*`)
 - **Blog posts** (`/blog/*`)
 - **Static pages** (/, /creators, /fans, /brands, /how-it-works)
 

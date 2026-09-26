@@ -18,7 +18,7 @@ To demonstrate value and attract early adopters, the platform consists of severa
 
 **Creator Assets:** A personalized digital asset system built on the Base network, giving creators their own digital representation to foster audience engagement and secure backing from fans.
 
-**Creative Bank:** A Web3 financial product utilizing USDC on the Base network. It offers lending, borrowing, and high-yield interest vaults powered by Aave and Yearn technology.
+**Creative Finance:** A Web3 financial product utilizing USDC on the Base network. It offers lending, borrowing, and high-yield interest vaults powered by Aave and Yearn technology.
 
 **Creative AI:** A factory of specialized AI agents (led by our orchestrator, Adam) designed to handle day-to-day business activities and workflows for creative professionals.
 
@@ -41,7 +41,7 @@ The absence of a fair, creator-first digital economy. It removes middlemen, allo
 Revenue generation and network utility will be driven by ecosystem transaction fees, royalty structures from minted digital assets, and the broader integration of protocol features managed by our community-governed entity, Creative Organization DAO, LLC.
 
 **What determines the product's success and failure?**
-Community acquisition, creator retention, the volume of capital locked into Creative Bank, and daily active usage metrics across the software suite.
+Community acquisition, creator retention, the volume of capital locked into Creative Finance, and daily active usage metrics across the software suite.
 
 ![Creative Updated Flow](https://creativeplatform.xyz/img/mockups/Updated_Creative_Flow.png)
 
@@ -51,7 +51,7 @@ The goal is to showcase the most important functionalities of the product to und
 
 **Must-Have Core Functionality:**
 
-- Seamless user login and wallet creation using Alchemy (for platform apps) and Crossmint (for banking).
+- Seamless user login and wallet creation using Alchemy (for platform apps) and Crossmint (for finance).
 - Frictionless fiat-to-Web3 onboarding using regulated partners like Coinbase Onramp and Halliday.
 - The ability to deploy smart contracts and digital assets on the Base network.
 - Integration with Aave and Yearn smart contracts to generate yield on stable assets (USDC) within liquidity pools.

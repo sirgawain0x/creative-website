@@ -10,19 +10,19 @@ export default function Fans() {
   
   return (
     <Layout 
-      title="Fans - From Viewer to Investor" 
-      description="The Creative platform blurs the line between audience and owner. Support the artists you love while utilizing institutional-grade tools to grow your onchain portfolio."
+      title="Fans - From Viewer to Superfan" 
+      description="Discover creators on Creative Platform, hold meTokens for exclusive access, and take part in the community."
     >
       <div className="fans-page">
         <Container>
           <div className="fans-page__content">
             <div className="fans-page__header">
-              <span className="fans-page__tagline">From Viewer to Investor</span>
+              <span className="fans-page__tagline">From Viewer to Superfan</span>
               <h1 className="fans-page__headline">
-                Don't Just Watch the Future. <br/>Own a Piece of It.
+                Don't Just Watch. <br/>Show Up for Creators You Love.
               </h1>
               <p className="fans-page__subheadline">
-                The Creative platform blurs the line between audience and owner. Support the artists you love while utilizing institutional-grade tools to grow your onchain portfolio.
+                Discover new work across Creative Platform, back creators you believe in, and unlock member-only streams and premium content on Creative TV.
               </p>
             </div>
 
@@ -32,19 +32,19 @@ export default function Fans() {
                 <li className="fans-page__feature-item">
                   <FontAwesomeIcon icon={faCheckCircle} className="fans-page__check-icon" />
                   <span>
-                    <strong>Discovery:</strong> Explore original onchain media before it goes mainstream.
+                    <strong>Discovery:</strong> Explore shows, music, podcasts, and live streams on Creative TV.
                   </span>
                 </li>
                 <li className="fans-page__feature-item">
                   <FontAwesomeIcon icon={faCheckCircle} className="fans-page__check-icon" />
                   <span>
-                    <strong>Collect:</strong> Support creators by collecting live clips and trading tokens.
+                    <strong>Collect:</strong> Hold a creator&apos;s meToken to back them and unlock exclusive live streams and premium content.
                   </span>
                 </li>
                 <li className="fans-page__feature-item">
                   <FontAwesomeIcon icon={faCheckCircle} className="fans-page__check-icon" />
                   <span>
-                    <strong>Participate:</strong> Join the conversation in Discord and share your favorite content.
+                    <strong>Participate:</strong> Comment on the shows and music you love and join the conversation in the feed. Take part in Prediction Markets—call the next milestone and ride along with a creator&apos;s journey.
                   </span>
                 </li>
               </ul>
@@ -52,28 +52,31 @@ export default function Fans() {
 
             <div className="fans-page__section fans-page__section--upgrade">
               <h2 className="fans-page__section-title">
-                Upgrade to the Investor Membership ($100/Month)
+                Upgrade to the Professional Membership ($100/Month)
               </h2>
               <ul className="fans-page__features-list">
                 <li className="fans-page__feature-item">
                   <FontAwesomeIcon icon={faCheckCircle} className="fans-page__check-icon" />
                   <span>
-                    <strong>Pro Investing Tools:</strong> Access advanced analytics and tools designed for the Web3 creative economy.
+                    <strong>Pro Tools:</strong> Deeper analytics and fan tools to follow the creators you care about.
                   </span>
                 </li>
                 <li className="fans-page__feature-item">
                   <FontAwesomeIcon icon={faCheckCircle} className="fans-page__check-icon" />
                   <span>
-                    <strong>Exclusive Opportunities:</strong> Get first-look access to new token launches, IP drops, and DAO-specific investment vehicles.
+                    <strong>Exclusive Opportunities:</strong> Early access to new releases, drops, and community programs.
                   </span>
                 </li>
                 <li className="fans-page__feature-item">
                   <FontAwesomeIcon icon={faCheckCircle} className="fans-page__check-icon" />
                   <span>
-                    <strong>Ecosystem Access:</strong> Unlock unique roles and governance influence within the Creative Organization DAO.
+                    <strong>Ecosystem Access:</strong> Expanded membership perks and a voice in Creative Organization DAO governance.
                   </span>
                 </li>
               </ul>
+              <p className="fans-page__disclaimer">
+                Holding a meToken is for access and community participation—not an investment or ownership stake in a creator.
+              </p>
             </div>
           </div>
         </Container>

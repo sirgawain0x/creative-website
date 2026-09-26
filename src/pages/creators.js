@@ -3,15 +3,12 @@ import Layout from '@theme/Layout';
 import { Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 export default function Creators() {
-  const {siteConfig} = useDocusaurusContext();
-  
   return (
     <Layout 
       title="Creators - Own Your Craft, Own Your IP" 
-      description="At Creative TV, you keep 100% of your revenue and total control over your intellectual property. From your first upload to your first prediction market, we provide the onchain tools to turn your art into an ecosystem."
+      description="On Creative TV, keep your revenue and IP. Grow your audience and build a lasting business."
     >
       <div className="creators-page">
         <Container>
@@ -22,7 +19,7 @@ export default function Creators() {
                 Stop Being a Product. <br/>Start Being a Platform.
               </h1>
               <p className="creators-page__subheadline">
-                At Creative TV, you keep 100% of your revenue and total control over your intellectual property. From your first upload to your first prediction market, we provide the onchain tools to turn your art into an ecosystem.
+                On Creative Platform, keep 100% of revenue and your IP. Grow your audience and build a lasting business from your first upload.
               </p>
             </div>
 
@@ -32,25 +29,25 @@ export default function Creators() {
                 <li className="creators-page__feature-item">
                   <FontAwesomeIcon icon={faCheckCircle} className="creators-page__check-icon" />
                   <span>
-                    <strong>Decentralized Hosting:</strong> Upload music videos, podcasts, and original films/animations without fear of de-platforming.
+                    <strong>Reliable Hosting:</strong> Upload video, podcasts, and films safely.
                   </span>
                 </li>
                 <li className="creators-page__feature-item">
                   <FontAwesomeIcon icon={faCheckCircle} className="creators-page__check-icon" />
                   <span>
-                    <strong>Onchain IP Management:</strong> Register your work via Story Protocol to secure your rights globally and instantly.
+                    <strong>IP Management:</strong> Register work and secure your rights.
                   </span>
                 </li>
                 <li className="creators-page__feature-item">
                   <FontAwesomeIcon icon={faCheckCircle} className="creators-page__check-icon" />
                   <span>
-                    <strong>Collaborative Splits:</strong> Automatically distribute earnings to your team with smart contract revenue splits.
+                    <strong>Collaborative Splits:</strong> Split earnings with your team automatically.
                   </span>
                 </li>
                 <li className="creators-page__feature-item">
                   <FontAwesomeIcon icon={faCheckCircle} className="creators-page__check-icon" />
                   <span>
-                    <strong>Launch Your meToken:</strong> Create a tradeable social token to build a liquid economy around your brand.
+                    <strong>Launch Your meToken:</strong> Launch your meToken and grow a supporter community.
                   </span>
                 </li>
               </ul>
@@ -58,25 +55,25 @@ export default function Creators() {
 
             <div className="creators-page__section creators-page__section--upgrade">
               <h2 className="creators-page__section-title">
-                Upgrade to the Creator Membership ($30/Quarter)
+                Upgrade to the Creator Membership ($10/Month)
               </h2>
               <ul className="creators-page__features-list">
                 <li className="creators-page__feature-item">
                   <FontAwesomeIcon icon={faCheckCircle} className="creators-page__check-icon" />
                   <span>
-                    <strong>Go Live:</strong> Unlock high-performance livestreaming powered by Livepeer.
+                    <strong>Go Live:</strong> Go live and stream to your fans.
                   </span>
                 </li>
                 <li className="creators-page__feature-item">
                   <FontAwesomeIcon icon={faCheckCircle} className="creators-page__check-icon" />
                   <span>
-                    <strong>The AI Agent Factory:</strong> Access our AI agents that help make running your Creative business easier while you focus on what you do best as a creator.
+                    <strong>The AI Agent Factory:</strong> AI agents that run business tasks for you.
                   </span>
                 </li>
                 <li className="creators-page__feature-item">
                   <FontAwesomeIcon icon={faCheckCircle} className="creators-page__check-icon" />
                   <span>
-                    <strong>Prediction Markets:</strong> Let your fans bet on your success. Create markets for viewers to predict your future milestones, creating a new layer of engagement and utility.
+                    <strong>Prediction Markets:</strong> Fans call your next milestone and ride along with your journey.
                   </span>
                 </li>
               </ul>

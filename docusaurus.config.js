@@ -36,10 +36,31 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
         sitemap: {
+          lastmod: 'date',
           changefreq: 'weekly',
           priority: 0.5,
-          ignorePatterns: ['/tags/**'],
+          ignorePatterns: ['/tags/**', '/markdown-page', '/search'],
           filename: 'sitemap.xml',
+          createSitemapItems: async ({siteConfig, routes, defaultCreateSitemapItems}) => {
+            const items = await defaultCreateSitemapItems({siteConfig, routes});
+            const highPriority = ['/', '/creators', '/fans', '/brands', '/how-it-works'];
+            const mediumPriority = ['/community/intro', '/creativetv/intro', '/finance/intro', '/sitemap'];
+
+            return items.map((item) => {
+              const path = new URL(item.url).pathname.replace(/\/$/, '') || '/';
+
+              if (highPriority.includes(path)) {
+                return {...item, priority: 1.0};
+              }
+              if (mediumPriority.includes(path)) {
+                return {...item, priority: 0.8};
+              }
+              if (path.startsWith('/community/legal')) {
+                return {...item, priority: 0.6, changefreq: 'monthly'};
+              }
+              return item;
+            });
+          },
         },
         gtag: {
           trackingID: 'G-JYLMMFQ9L0',
@@ -54,7 +75,7 @@ const config = {
       {
         id: 'creativebank',
         path: 'creativebank',
-        routeBasePath: 'creativebank',
+        routeBasePath: 'finance',
         sidebarPath: require.resolve('./sidebarsCreativebank.js'),
         editUrl: 'https://github.com/g2entgroup/creative-website/',
         sidebarCollapsible: true,
@@ -115,7 +136,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'The Web3 platform for creators, fans and brands.<strong><a target="_blank" rel="noopener noreferrer" href="https://tv.creativeplatform.xyz"> Launch Creative TV</a></strong>',
+          'Creative Platform for creators, fans and brands.<strong><a target="_blank" rel="noopener noreferrer" href="https://tv.creativeplatform.xyz"> Launch Creative TV</a></strong>',
         backgroundColor: '#2B1A20',
         textColor: '#52F761',
         isCloseable: true,
@@ -148,6 +169,16 @@ const config = {
             position: 'left',
           },
           {
+            href: 'https://news.creativeplatform.xyz/subscribe',
+            label: 'News',
+            position: 'right',
+          },
+          {
+            href: 'https://open.spotify.com/show/4zAsBnJwZKquxvI7oPqRam?si=3bcceebea4614195',
+            label: 'Podcast',
+            position: 'right',
+          },
+          {
             type: 'dropdown',
             label: 'Creative Products',
             position: 'right',
@@ -157,16 +188,12 @@ const config = {
                 label: "TV",
               },
               {
-                href: "https://bank.creativeplatform.xyz",
+                href: "https://finance.creativeplatform.xyz",
                 label: "Finance",
               },
               {
-                href: "https://ip.creativeplatform.xyz",
-                label: "IP",
-              },
-              {
-                href: "https://news.creativeplatform.xyz/subscribe",
-                label: "News",
+                href: "https://air.creativeplatform.xyz",
+                label: "Mixtape",
               },
               {
                 href: "https://create.creativeplatform.xyz",
@@ -177,9 +204,9 @@ const config = {
                 label: "Beat Me",
               },
               {
-                href: "https://open.spotify.com/show/4zAsBnJwZKquxvI7oPqRam?si=3bcceebea4614195",
-                label: "Podcast",
-              }
+                href: "https://books.creativeplatform.xyz",
+                label: "Books",
+              },
               // {
               //   href: "https://app.creativeplatform.xyz",
               //   label: "Terminal",
@@ -226,8 +253,8 @@ const config = {
                 to: '/creativetv/intro',
               },
               {
-                label: 'Creative Bank Docs',
-                to: '/creativebank/intro',
+                label: 'Creative Finance Docs',
+                to: '/finance/intro',
               },
               {
                 label: 'Whitepaper',
@@ -236,6 +263,10 @@ const config = {
               {
                 label: 'Blog',
                 href: 'https://blog.creativeplatform.xyz',
+              },
+              {
+                label: 'Sitemap',
+                to: '/sitemap',
               },
               {
                 href: 'https://github.com/creativeplatform',
@@ -274,6 +305,10 @@ const config = {
               {
                 label: 'Privacy Policy',
                 to: '/community/legal/privacy-policy',
+              },
+              {
+                label: 'SMS Opt-In',
+                to: '/sms',
               },
               {
                 label: 'Cookie Policy',

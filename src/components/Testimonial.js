@@ -123,13 +123,13 @@ const Testimonial = () => {
                                     </li>
                                     <li className="slide-item">
                                         <div className="testimonials__one__single">
-                                            <p>The easiest bridge between crypto and cash. Most Web3 platforms are too complicated for my team. Creative Bank made it simple to manage our earnings and move between crypto and fiat without the headache. It’s the first financial dashboard that actually understands what a creator needs.</p>
-                                            <h3>Kyle Demayo, DAO Founder</h3>
+                                            <p>The easiest bridge between earnings and cash. Creative Finance made it simple to manage our money—it’s the first dashboard that understands creators.</p>
+                                            <h3>Kyle Demayo, Founder</h3>
                                         </div>
                                     </li>
                                     <li className="slide-item">
                                         <div className="testimonials__one__single">
-                                            <p>Enterprise-grade trust for independent creators. In an era of deepfakes, provenance is everything. Creative Platform’s integration of C2PA standards ensures that our brand collaborations are verified and secure. It’s the safety of Web2 with the innovation of Web3.</p>
+                                            <p>Enterprise-grade trust for independent creators. Creative Platform helps our brand collaborations stay verified and secure.</p>
                                             <h3>Minta Hadad, Brand Partnerships Director</h3>
                                         </div>
                                     </li>
@@ -141,7 +141,7 @@ const Testimonial = () => {
                                     </li>
                                     <li className="slide-item">
                                         <div className="testimonials__one__single">
-                                            <p>It’s like having a CFO in my pocket. Creatives are usually great at art but struggle with the business side. Creative Bank changed that for me. I can finally track my royalties, manage payouts to my collaborators, and secure my assets in one dashboard. It turns my catalog from a hobby into a verifiable business.</p>
+                                            <p>It’s like having a CFO in my pocket. Creatives are usually great at art but struggle with the business side. Creative Finance changed that for me. I can finally track my royalties, manage payouts to my collaborators, and secure my assets in one dashboard. It turns my catalog from a hobby into a verifiable business.</p>
                                             <h3>Gary Eyrich,Producer & Label Owner</h3>
                                         </div>
                                     </li>

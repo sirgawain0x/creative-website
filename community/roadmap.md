@@ -47,7 +47,7 @@ Key metrics we focus on tracking across the ecosystem include:
 
 **Resilient Playback Architecture:** Finalizing the underlying playback components and local-first storage infrastructure to support seamless, decentralized streaming.
 
-### Creative Bank Expansion
+### Creative Finance Expansion
 
 **Visa Debit Card Integration:** Bridging Web3 with traditional finance by allowing creators to seamlessly spend their USDC balances and yielded funds in the real world.
 

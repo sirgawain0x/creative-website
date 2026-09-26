@@ -110,44 +110,40 @@ export default function HowItWorks() {
     };
   }, [activeStep]);
 
-  const toggleMode = () => {
-    setIsSimpleMode(!isSimpleMode);
-  };
-
   const stepData = [
     {
       number: 1,
       title: "Join the Movement (Login in Seconds)",
-      simple: "Sign in with your email or social account—no complicated crypto setup needed!",
-      tech: "Forget seed phrases and complicated setups. Using our Account Kit (Social Auth), you can join the ecosystem using your existing email or social accounts. We use Account Abstraction to create a secure, smart contract-based wallet for you behind the scenes. You get all the power of the blockchain with none of the hassle.",
-      protocols: []
+      simple: "Sign in with your email or social account—no wallet setup required.",
+      tech: "Using Account Kit (Social Auth), you can join Creative Platform with your existing email or social accounts. Account Abstraction creates a smart contract wallet behind the scenes, so you can use TV, Finance, and other products without managing seed phrases yourself. Onchain wallet and contract interactions for the product today run on Base (Coinbase's Layer 2 network)—Creative Platform's primary supported chain.",
+      protocols: ["Base"]
     },
     {
       number: 2,
       title: "Choose Your Role (Unlock Your Key)",
-      simple: "Pick your role: Creator, Fan, or Brand. Your membership is a key that you own!",
-      tech: "Our ecosystem is powered by Unlock Protocol. Your membership isn't just a subscription; it's an NFT Key that you own. You can start for free or upgrade to a specialized role: Creators (the heartbeat of the platform), Professionals/Fans (the fuel for creative growth), or Brands (the partners in cultural innovation).",
-      protocols: ["Unlock Protocol"]
+      simple: "Pick your role: Creator, Fan, or Brand. Your membership key stays with you as you grow. Comment on the shows and music you love and join the conversation in the feed.",
+      tech: "Memberships are issued through Unlock Protocol as NFT Keys you control—not just a recurring login. Start free or upgrade into a Creator, Fan (Professional), or Brand membership, each with its own access and tools. Social feeds and comments on videos, music, and posts are powered by Lens Protocol so fans engage in-product—not only on third-party chat apps.",
+      protocols: ["Unlock Protocol", "Lens"]
     },
     {
       number: 3,
       title: "Create & Protect (Own Your IP)",
-      simple: "Upload your videos and get paid. We help you own your content and get credit for your work.",
-      tech: "Upload & Stream: Use our decentralized infrastructure (powered by Livepeer) to host music videos, podcasts, and films. Programmable IP: With a single click, register your work on Story Protocol. This turns your content into \"Programmable IP,\" meaning you set the rules for how others can use or remix your work, ensuring you always get credited and paid. AI Enhancement: Step into Creative Pixels, our AI Agent Factory, to generate visuals, sync lyrics, and create cinematic content in real-time.",
+      simple: "Upload your work, stream live, and keep control of how your content is used and credited.",
+      tech: "Upload & Stream: Host music videos, podcasts, and films on infrastructure powered by Livepeer; creators can stream live with Livepeer. Programmable IP: Register work on Story Protocol to set terms for reuse and remix, with attribution and payment rules you define. AI Enhancement: Creative Pixels, our AI Agent Factory, helps generate visuals, sync lyrics, and produce cinematic content.",
       protocols: ["Livepeer", "Story Protocol"]
     },
     {
       number: 4,
-      title: "The Economy (Automated Rewards)",
-      simple: "Get paid automatically! When you collaborate, money splits instantly. Launch your own token and let fans bet on your success.",
-      tech: "Revenue Splits: Collaborating on a project? Our smart contracts automatically split earnings between you and your team the second they hit your wallet. No invoices, no waiting. meTokens: Launch your own personal brand token. As your influence grows, so does your liquid economy. Prediction Markets: Members can use Reality.eth to create \"Future Markets.\" Fans can predict your next big milestone, creating a fun, gamified way to engage and support your career.",
-      protocols: ["Reality.eth"]
+      title: "Get Paid & Engage (Splits, meTokens & Markets)",
+      simple: "Collaborators get paid automatically when revenue comes in. Launch your meToken so fans can back you and unlock exclusive streams and premium content. Fans call your next milestone and ride along with your journey through Prediction Markets.",
+      tech: "Base: meTokens, revenue-split contracts, and on-platform Prediction Markets are deployed on Base—the first and primary chain Creative Platform supports today. Revenue Splits: Smart contracts on Base route earnings to you and collaborators according to the split you configure when payments arrive—no manual invoicing for each payout. meTokens: Your meToken is your personal brand currency. Fans hold it to back you and unlock exclusive live streams and premium content; meToken balances and prices can change and are not an investment or ownership stake. Prediction Markets: Reality.eth powers community Prediction Markets where fans forecast milestones for engagement—not cash wagering. Fans call your next milestone and ride along with your journey.",
+      protocols: ["Base", "Reality.eth"]
     },
     {
       number: 5,
       title: "Shape the Future (DAO Governance)",
-      simple: "You're not just a user—you're an owner! Vote on what happens next with your CRTV tokens.",
-      tech: "Because we are a DAO (Decentralized Autonomous Organization), the community holds the steering wheel. Vote on Proposals: Use your CRTV tokens on Snapshot to vote on platform updates, new features, and treasury allocations. No Central Boss: You aren't just a user; you're a stakeholder in the future of decentralized media.",
+      simple: "Help guide what Creative builds next by voting with CRTV tokens in community proposals.",
+      tech: "Creative Organization is a DAO: members use CRTV on Snapshot to vote on platform updates, features, and treasury allocations. Governance is collective—no single operator decides the roadmap alone.",
       protocols: ["Snapshot"]
     }
   ];
@@ -155,7 +151,7 @@ export default function HowItWorks() {
   return (
     <Layout 
       title="How It Works - The Ecosystem" 
-      description="Everything you need to create, invest, and grow—all in one place. Creative TV isn't just a streaming site; it's a decentralized media engine powered by the Creative Organization DAO."
+      description="How Creative Platform works for creators, fans, and brands—TV, Finance, Mixtape, Pixels, Beat Me, Books, and more, supported by the Creative Organization DAO."
     >
       <div className="how-it-works-page" ref={pageRef}>
         <Container>
@@ -165,23 +161,27 @@ export default function HowItWorks() {
                 The Ecosystem: How It Works
               </h1>
               <p className="how-it-works-page__subheadline">
-                Everything you need to create, invest, and grow—all in one place.
+                Everything you need to create, connect, and grow—all in one place.
               </p>
               <p className="how-it-works-page__intro">
-                Creative TV isn't just a streaming site; it's a decentralized media engine powered by the Creative Organization DAO. We've removed the "crypto-friction" so you can focus on the art.
+                Creative Platform is the ecosystem for creators, fans, and brands—products include Creative TV (streaming), Creative Finance (payouts and treasury tools), Mixtape, Pixels, Beat Me, and Books. Use the toggle below for a quick overview or the technical details.
               </p>
               
               <div className="how-it-works-page__toggle">
                 <button 
+                  type="button"
                   className={`how-it-works-page__toggle-btn ${isSimpleMode ? 'active' : ''}`}
-                  onClick={toggleMode}
+                  onClick={() => setIsSimpleMode(true)}
+                  aria-pressed={isSimpleMode}
                   aria-label="Explain like I'm 5"
                 >
                   Explain like I'm 5
                 </button>
                 <button 
+                  type="button"
                   className={`how-it-works-page__toggle-btn ${!isSimpleMode ? 'active' : ''}`}
-                  onClick={toggleMode}
+                  onClick={() => setIsSimpleMode(false)}
+                  aria-pressed={!isSimpleMode}
                   aria-label="Show me the Tech"
                 >
                   Show me the Tech
@@ -223,7 +223,7 @@ export default function HowItWorks() {
                       <p>{step.tech}</p>
                     )}
                   </div>
-                  {step.protocols.length > 0 && (
+                  {!isSimpleMode && step.protocols.length > 0 && (
                     <div className="how-it-works-page__protocols">
                       {step.protocols.map((protocol, pIndex) => (
                         <span 

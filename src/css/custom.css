@@ -4878,6 +4878,19 @@ html[data-theme='dark'] .fans-page__subheadline {
 	color: rgba(255, 255, 255, 0.9);
 }
 
+.fans-page__disclaimer {
+	font-size: 16px;
+	line-height: 1.6;
+	color: var(--ifm-color-content-secondary);
+	margin-top: 24px;
+	margin-bottom: 0;
+	font-weight: 400;
+}
+
+html[data-theme='dark'] .fans-page__disclaimer {
+	color: rgba(255, 255, 255, 0.75);
+}
+
 .fans-page__section {
 	margin-bottom: 50px;
 	padding: 40px;

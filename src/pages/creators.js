@@ -19,7 +19,7 @@ export default function Creators() {
                 Stop Being a Product. <br/>Start Being a Platform.
               </h1>
               <p className="creators-page__subheadline">
-                On Creative TV, keep 100% of revenue and your IP. Grow your audience and build a lasting business from your first upload.
+                On Creative Platform, keep 100% of revenue and your IP. Grow your audience and build a lasting business from your first upload.
               </p>
             </div>
 
@@ -61,7 +61,7 @@ export default function Creators() {
                 <li className="creators-page__feature-item">
                   <FontAwesomeIcon icon={faCheckCircle} className="creators-page__check-icon" />
                   <span>
-                    <strong>Go Live:</strong> Stream live with Livepeer.
+                    <strong>Go Live:</strong> Go live and stream to your fans.
                   </span>
                 </li>
                 <li className="creators-page__feature-item">

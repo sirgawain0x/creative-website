@@ -22,7 +22,7 @@ const Faq = () => {
                                 </div>
                                 <div className="accrodion-content">
                                     <div className="inner">
-                                        <p>A: Creative Platform is home for musicians, video producers, and digital artists. Get discovered, work with fans and brands, and earn on Creative TV.</p>
+                                        <p>A: Creative Platform is home for musicians, video producers, and digital artists. Get discovered, work with fans and brands, and earn across the ecosystem—from streaming on Creative TV to payouts with Creative Finance.</p>
                                     </div>
                                 </div>
                             </div>

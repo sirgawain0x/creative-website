@@ -1,6 +1,18 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+const {
+  createLegacyDocsRedirects,
+  staticLegacyDocsRedirects,
+} = require('./scripts/docs-legacy-redirects');
+
+/** Static files copied to build/ are not Docusaurus routes, so the sitemap plugin skips them. */
+const EXTRA_SITEMAP_STATIC_PATHS = [
+  '/community/security/audits',
+  '/community/security/bounties',
+  '/creativebank/intro',
+];
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Creative',
@@ -39,14 +51,27 @@ const config = {
           lastmod: 'date',
           changefreq: 'weekly',
           priority: 0.5,
-          ignorePatterns: ['/tags/**', '/markdown-page', '/search'],
+          ignorePatterns: ['/tags/**', '/search', '/404.html'],
           filename: 'sitemap.xml',
           createSitemapItems: async ({siteConfig, routes, defaultCreateSitemapItems}) => {
             const items = await defaultCreateSitemapItems({siteConfig, routes});
             const highPriority = ['/', '/creators', '/fans', '/brands', '/how-it-works'];
             const mediumPriority = ['/community/intro', '/creativetv/intro', '/finance/intro', '/sitemap'];
 
-            return items.map((item) => {
+            const existingPaths = new Set(
+              items.map((item) => new URL(item.url).pathname.replace(/\/$/, '') || '/'),
+            );
+
+            const siteUrl = siteConfig.url.replace(/\/$/, '');
+            const extraItems = EXTRA_SITEMAP_STATIC_PATHS
+              .filter((pathname) => !existingPaths.has(pathname))
+              .map((pathname) => ({
+                url: `${siteUrl}${pathname}`,
+                changefreq: 'monthly',
+                priority: 0.5,
+              }));
+
+            return [...items, ...extraItems].map((item) => {
               const path = new URL(item.url).pathname.replace(/\/$/, '') || '/';
 
               if (highPriority.includes(path)) {
@@ -70,6 +95,13 @@ const config = {
     ],
   ],
   plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: staticLegacyDocsRedirects(),
+        createRedirects: createLegacyDocsRedirects,
+      },
+    ],
     [
       '@docusaurus/plugin-content-docs',
       {

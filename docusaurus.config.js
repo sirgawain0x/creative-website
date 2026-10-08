@@ -6,13 +6,6 @@ const {
   staticLegacyDocsRedirects,
 } = require('./scripts/docs-legacy-redirects');
 
-/** Static files copied to build/ are not Docusaurus routes, so the sitemap plugin skips them. */
-const EXTRA_SITEMAP_STATIC_PATHS = [
-  '/community/security/audits',
-  '/community/security/bounties',
-  '/creativebank/intro',
-];
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Creative',
@@ -58,20 +51,7 @@ const config = {
             const highPriority = ['/', '/creators', '/fans', '/brands', '/how-it-works'];
             const mediumPriority = ['/community/intro', '/creativetv/intro', '/finance/intro', '/sitemap'];
 
-            const existingPaths = new Set(
-              items.map((item) => new URL(item.url).pathname.replace(/\/$/, '') || '/'),
-            );
-
-            const siteUrl = siteConfig.url.replace(/\/$/, '');
-            const extraItems = EXTRA_SITEMAP_STATIC_PATHS
-              .filter((pathname) => !existingPaths.has(pathname))
-              .map((pathname) => ({
-                url: `${siteUrl}${pathname}`,
-                changefreq: 'monthly',
-                priority: 0.5,
-              }));
-
-            return [...items, ...extraItems].map((item) => {
+            return items.map((item) => {
               const path = new URL(item.url).pathname.replace(/\/$/, '') || '/';
 
               if (highPriority.includes(path)) {

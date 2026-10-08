@@ -9,7 +9,7 @@
     "algolia:sync": "yarn algolia:export && yarn algolia:upload",
     "algolia:config": "node scripts/algolia-index-config.js",
     "start": "docusaurus start",
-    "build": "docusaurus build",
+    "build": "docusaurus build && node scripts/patch-404-html.js",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@docusaurus/core": "^3.9.0",
+    "@docusaurus/plugin-client-redirects": "3.9.2",
     "@docusaurus/preset-classic": "^3.9.0",
     "@fortawesome/fontawesome-svg-core": "^6.1.0",
     "@fortawesome/free-regular-svg-icons": "^6.0.0-beta2",

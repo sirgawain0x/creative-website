@@ -1,6 +1,11 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+const {
+  createLegacyDocsRedirects,
+  staticLegacyDocsRedirects,
+} = require('./scripts/docs-legacy-redirects');
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Creative',
@@ -39,7 +44,7 @@ const config = {
           lastmod: 'date',
           changefreq: 'weekly',
           priority: 0.5,
-          ignorePatterns: ['/tags/**', '/markdown-page', '/search'],
+          ignorePatterns: ['/tags/**', '/search', '/404.html'],
           filename: 'sitemap.xml',
           createSitemapItems: async ({siteConfig, routes, defaultCreateSitemapItems}) => {
             const items = await defaultCreateSitemapItems({siteConfig, routes});
@@ -70,6 +75,13 @@ const config = {
     ],
   ],
   plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: staticLegacyDocsRedirects(),
+        createRedirects: createLegacyDocsRedirects,
+      },
+    ],
     [
       '@docusaurus/plugin-content-docs',
       {
